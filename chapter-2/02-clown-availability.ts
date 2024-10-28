@@ -58,3 +58,17 @@ if (matchingsDescription.length) {
 }
 
 export {};
+
+// Bonus
+
+// Evolving any type - starts as any and then becomes a string
+
+let name;
+
+name = 5;
+name = "Krusty";
+let length = name.length; // Fine because name is a string
+name = 2; // Back to any again :(
+let nameString = name.toString(); // Oh wait it is a number
+
+
